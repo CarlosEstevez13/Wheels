@@ -1,3 +1,15 @@
 page-home {
-
+    .margen{
+        margin-bottom: 3px;
+    }
+    .fondo{
+        background-image: url('/assets/imgs/fondo1.jpg');
+        border-radius: 10px 10px 10px 10px;
+    }
+    .fondon{
+        background: none;
+    }
+    .carousel{
+        height: 30%;
+    }
 }
