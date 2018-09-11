@@ -1,6 +1,6 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+<ion-header class="centrado">
+  <ion-navbar class="centrado">
+    <ion-title class='centrado'>Wheels</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -8,13 +8,14 @@
 
     <ion-slides class="carousel">
         <ion-slide>
-          <h1>Slide 1</h1>
+          
+          <img src="assets/imgs/publicidad1.png">
         </ion-slide>
         <ion-slide>
-          <h1>Slide 2</h1>
+            <img src="assets/imgs/publicidad2.jpg">
         </ion-slide>
         <ion-slide>
-          <h1>Slide 3</h1>
+            <img src="assets/imgs/publicidad3.png">
         </ion-slide>
       </ion-slides>
 
@@ -24,7 +25,6 @@
             <p>{{viaje.partida}} <ion-icon name="arrow-round-forward"></ion-icon> {{viaje.destino}}</p>
             <h3 item-end>{{viaje.fecha}}</h3>
           </ion-item>      
-      
         <ion-item class="fondon">
           <ion-avatar item-start>
             <img src="assets/imgs/{{viaje.imagen}}">
@@ -33,7 +33,6 @@
           <p><ion-icon ios="ios-person" md="md-person"></ion-icon> {{viaje.cupos}} cupos</p>
         </ion-item>
         
-      
       
       </ion-card>
 </ion-content>

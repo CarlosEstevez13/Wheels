@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import { ContactPage } from '../contact/contact';
 
 @Component({
   selector: 'page-home',
@@ -14,8 +13,8 @@ export class HomePage {
       destino: 'UIS',
       partida: 'San Francisco',
       fecha: '14 de sep',
-      imagen: 'marty.jpeg',
-      nombre: 'Marty Mcfly',
+      imagen: 'conductor1.png',
+      nombre: 'Camilo Diaz',
       hora: '03:00pm',
       cupos: '3',
     },
@@ -23,8 +22,8 @@ export class HomePage {
       destino: 'UIS',
       partida: 'Cabecera',
       fecha: '14 de sep',
-      imagen: 'marty.jpeg',
-      nombre: 'Forest Gump',
+      imagen: 'conductor2.ico',
+      nombre: 'Andres Andrade',
       hora: '02:00pm',
       cupos: '2',
     },
@@ -32,8 +31,8 @@ export class HomePage {
       destino: 'UIS',
       partida: 'Piedecuesta',
       fecha: '15 de sep',
-      imagen: 'marty.jpeg',
-      nombre: 'Jenny Scatch',
+      imagen: 'conductor3.jpeg',
+      nombre: 'Mario Paez',
       hora: '01:00pm',
       cupos: '3',
     }
@@ -59,7 +58,7 @@ export class HomePage {
           text: 'Unirse',
           handler: () => {
             console.log('Unirse clickeado');
-            this.navCtrl.setRoot(ContactPage);
+            this.navCtrl.parent.select(2);;
           }
         }
       ]
