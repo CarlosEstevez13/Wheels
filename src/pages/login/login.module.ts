@@ -12,11 +12,6 @@ import { LoginPage } from './login';
   ],
 })
 export class LoginPageModule {
-  constructor(public navCtrl:NavController){
-
-  }
-
-  loguear(){
-    this.navCtrl.setRoot(HomePage);
-  }
+    
 }
+

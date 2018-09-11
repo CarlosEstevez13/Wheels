@@ -13,6 +13,18 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="aling:center;">
+  <ion-list>
+   
+    <ion-item>
+      <ion-label color="primary" fixed>Codigo</ion-label>
+      <ion-input type="tel" placeholder="Codigo"></ion-input>
+    </ion-item>
+  <br>
+  <button ion-button full round color="primary" (click)="loguear()">Iniciar</button>
+  
+    <button ion-button full  round color="secondary" (click)="registro()">Registrarse</button>
 
+   
+  </ion-list>
 </ion-content>
