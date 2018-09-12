@@ -1,17 +1,51 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      <ion-item>
+          <ion-avatar item-start>
+              <img src="assets/imgs/marty.jpeg">
+            </ion-avatar>
+      Marty Mcfly - Conductor <ion-icon name="call" item-end></ion-icon>
+      <ion-icon style="margin-left:20px" ios="ios-more" md="md-more" item-end></ion-icon>
+    </ion-item>
     </ion-title>
+    
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="fondo">
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+    <ion-item class="messages-u">
+      Hola
     </ion-item>
+
+    <ion-item class="messages-c">
+      Hola!
+    </ion-item>
+
+    <ion-item class="messages-c">
+        Como estas?
+      </ion-item>
+
+<!-- 
+      <ion-item>
+          <ion-label>Gaming</ion-label>
+          <ion-select>
+            <ion-option *ngFor="let i of prueba" value="nes">{{i}}</ion-option>
+          </ion-select>
+        </ion-item> -->
+
   </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-item>  
+    <ion-input type="text" placeholder="Escriba un mensaje"></ion-input>
+        <ion-icon style="color:black;" name="send" (click)='prueba()' item-end></ion-icon>
+  </ion-item>
+  
+</ion-footer>
+
+
+
+
+<ion-option *ngFor="let u of uni" value="u">{{u}}</ion-option>

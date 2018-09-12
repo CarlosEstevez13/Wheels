@@ -6,7 +6,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-
+  prueba=[
+    'hola','1','2','4'
+  ];
   constructor(public navCtrl: NavController) {
 
   }
